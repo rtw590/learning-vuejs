@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS Tutorial</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    
+    <div id="vue-app">
+        <h1>Conditionals: V-If and V-Show</h1>
+            <!-- V-If is false. element will not be in the DOM, if true, it will be. Can be used with v-else-if -->
+            <!-- v-show works similarly, but will be in the DOM when false, but will have dislplay set to none -->
+
+            <button v-on:click="error = !error">Toggle Error</button>
+            <button v-on:click="success = !success">Toggle Success</button>
+            <!-- <p v-if="error">There has been an error</p>
+            <p v-else-if="success">Success!!!</p> -->
+
+            <p v-show="error">There has been an error</p>
+            <p v-show="success">Success!!!!</p>
+
+        <h1>V-For: Looping</h1>
+        <!-- V-for will Loop through arrays. for x in y where x is each item in the array y -->
+            <ul>
+                <li v-for="x in pokemon">{{ x }}</li>
+            </ul>
+
+            <template v-for="x in ffx">
+                <h2>{{ x.name }}</h2>
+                <p>{{ x.age }}</p>
+            </template>
+
+            <!-- First Loop goes through the array and second loop goes through each trait in the object -->
+            <template v-for="x in ffx">
+                <div v-for="(val,key) in x">
+                    <p>{{ key }} - {{ val }}</p>
+                </div>
+            </template>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
