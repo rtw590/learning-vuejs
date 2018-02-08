@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS Tutorial</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+       <!-- Name an element as a ref with ref="name that you choose". Then you can access many properties of that like name.value etc -->
+
+        <h1>Refs</h1>
+        <input type="text" ref="input" />
+        <button @click="readRefs">Submit</button>
+        <p>Your fav food: {{ output  }}</p>
+
+        <div ref="test">hello</div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
