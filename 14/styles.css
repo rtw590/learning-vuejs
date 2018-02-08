@@ -1,0 +1,36 @@
+h1, h2, h3, p, a, li, ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 37px;
+    font-weight: 700;
+    background-color: rgb(0, 184, 168);
+    color: white;
+    padding-left: 10px;
+}
+
+#canvas {
+    width: 600px;
+    padding: 100px 20px;
+    text-align: center;
+    border: 1px solid #333;
+    margin-top: 10px;
+}
+
+span {
+    background: red;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.available span {
+    background: green;
+}
+
+.nearby span:after {
+    content: "nearby";
+    margin-left: 10px;
+}

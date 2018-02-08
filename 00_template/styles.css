@@ -1,0 +1,12 @@
+h1, h2, h3, p, a, li, ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 37px;
+    font-weight: 700;
+    background-color: rgb(0, 184, 168);
+    color: white;
+    padding-left: 10px;
+}
+
