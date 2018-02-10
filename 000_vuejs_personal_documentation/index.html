@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS Tutorial</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+       
+        <h1 class="topic">Input Binding</h1>
+
+        <p>
+            add v-model to an element and then you can use that element name in brackets
+            somewhere else. You must define the v-model name in the data section
+        </p>
+
+        <p>
+            An example is to put input binding on an input and have that text shown elsewhere like
+            drafting a blog and then you see the live preview of your typing.
+        </p>
+
+        <h1 class="topic">Checkbox Binding</h1>
+
+        <div id="checkboxes">
+            <label>Ninjas</label>
+            <input type="checkbox" value="ninjas" v-model="blog.categories" />
+            <label>Wizards</label>
+            <input type="checkbox" value="wizards" v-model="blog.categories" />
+            <label>Mario</label>
+            <input type="checkbox" value="mario" v-model="blog.categories" />
+            <label>Cheese</label>
+            <input type="checkbox" value="cheese" v-model="blog.categories" />
+        </div>
+
+        <p>
+            If you click the checkbox, it will add the value into the array 
+            (blog is a data object and categories is an array inside it)
+        </p>
+
+        <p>
+            If you made an array, you can use a v-for to cycle through and display it.
+        </p>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
